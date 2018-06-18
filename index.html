@@ -3,17 +3,75 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Crystals Collector!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css"/>
-    <script src="/assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body background="https://wallpapersfun.files.wordpress.com/2011/09/1286777643_1600x1200_2-crystal-balls.jpg">
-    <header>
-        <h1>Crystal Collector!</h1>
-    </header>
+
+    <div class = "container">
+        <div class="jumbotron" style="height: 30rem; padding: 10px; ">
+            <h1 class="display-6" style="text-align: center;">Crystals Collector!</h1>
+            <p class="lead" style="text-align: center;">You will be given a random number at the start of the game. </p>
+            <hr class="my-6">
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            <p style="font-weight: bold; font-size: 20px">Wins: <span id="spanWins"></span></p>
+            <p style="font-weight: bold; font-size: 20px">Losses: <span id="spanLosses"></span></p>
+            <p style="font-weight: bold; font-size: 20px">Your Total Score is <span id="spanWinningScore"></span></p>
+            <p style="font-weight: bold; font-size: 20px">Target Score:   <span id="divTargetScore"></div></p>
+            
+        </div>
+    </div>
+
+
+    <table>
+    <tr>
+        <td>
+            <div class="card" style="width: 15rem; height: 15rem; margin-left: 120px;">
+                <img class="card-img-top" id="crystalPic1" src="https://classroomclipart.com/images/gallery/Animations/Objects/TN_animated-gem-diamond-clipart-005c.jpg" alt="Card image cap">
+                <div class="card-body">
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="card" style="width: 15rem; height: 15rem; margin-left: 15px;">
+                <img class="card-img-top" id="crystalPic2" src="http://www.mysticfamiliar.com/library/crystals/images/em2.jpg" alt="Card image cap">
+                <div class="card-body">
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="card" style="width: 15rem; height: 15rem; margin-left: 15px;">
+                <img class="card-img-top" id="crystalPic3" src="https://cdn1.iconfinder.com/data/icons/crystal-1/60/yellow_crystal-512.png" alt="Card image cap">
+                <div class="card-body">
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class="card" style=" width: 15rem; height: 15rem; margin-left: 15px;">
+                <img class="card-img-top" id="crystalPic4" src="https://wonderopolis.org/_img?img=/wp-content/uploads/2017/04/Red_Rubiesdreamstime_xxl_23580643.jpg" alt="Card image cap">
+                <div class="card-body">
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+
+
     
+
+<script src="assets/javascript/game.js"></script>
+
 
 </body>
 </html>
