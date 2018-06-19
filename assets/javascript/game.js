@@ -19,10 +19,10 @@ function generateTargetScore(){
     console.log(randomScore);
 
     //Select 4 random numbers for all 4 crystals
-    crystal1 = Math.floor(Math.random()*12);
-    crystal2 = Math.floor(Math.random()*12);
-    crystal3 = Math.floor(Math.random()*12);
-    crystal4 = Math.floor(Math.random()*12);
+    crystal1 = Math.floor(Math.random()*12+1);
+    crystal2 = Math.floor(Math.random()*12+1);
+    crystal3 = Math.floor(Math.random()*12+1);
+    crystal4 = Math.floor(Math.random(1)*12+1);
     console.log(crystal1, crystal2, crystal3, crystal4);
 
     //Show Target Score
